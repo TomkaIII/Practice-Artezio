@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <nav>
+        <a class = "main" href="@"> ГЛАВНАЯ </a>
+        <a class = "tasks" href = "@"> ЗАДАНИЯ </a>
+        <a class = "settings" href="@"> НАСТРОЙКИ</a>
+    </nav>
+
+    <header>
+        <span class = "headerText">Список заданий</span>
+    </header>
+
+    <section class = "task1">
+        <div class = "task">Задание 1. Ввод символов</div>
+    
+        <input oninput="getCount(this)" name="" id="task1" cols="30" rows="1"></input>
+
+        <span id="answer1">Количество символов: 0</span>
+    </section>
+
+    <section>
+        <div class="task" >Задание 2. Ввод текста</div>
+
+        <textarea oninput="getTextInfo(this)" name="" id="task2" cols="30" rows="5"></textarea>
+
+        <div class = "answer2" id = "signCountTask2">Количество символов: 0</div>
+        <div class = "answer2" id = "wordCountTask2">Количество слов: 0</div>
+        <div class = "answer2" id = "textCountTask2">Количество строк: 0</div>
+    </section>
+
+    <section>
+        <div class="task" >Задание 3. Проверка ввода</div>
+        
+        <input  oninput="validInput(this,'answer3')" type="text">
+
+        <div id = "answer3">Осталось символов: 10</div>
+    </section>
+
+    <section>
+        <div class="task">Задание 4. Ограничение ввода </div>
+
+        <section class="textArea">
+            <textarea oninput="validInputWithRestriction(this)" name="" id="textAreaTask4" cols="30" rows="5"></textarea>
+            <input type="checkbox" id = "banExceeding">
+
+            <span>Запретить превышение</span>
+        </section>
+
+        <div id = "answer4">Осталось символов: 10</div>
+    </section>
+
+    <section>
+        <div class="task">Задание 5. Слайдер картинок </div>
+
+        <div class = "swiper">
+             <div class="swiper-wrapper">
+                <div class="swiper-slide">  
+                    <div class="image-container">
+                        <img class = "slide-image" src="C:\Users\Kvadrat\Desktop\Практика\Задание 1\images\css.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">  
+                    <div class="image-container">
+                        <img class = "slide-image" src="C:\Users\Kvadrat\Desktop\Практика\Задание 1\images\HTML.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">  
+                    <div class="image-container">
+                        <img class = "slide-image" src="C:\Users\Kvadrat\Desktop\Практика\Задание 1\images\js.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="task">Задание 6. Разность дат</div>
+        <div id = "dateNow"></div>
+    
+        <section class = "textArea">
+            <select name="day" id="day"></select>
+            <select name="month" id="month"></select>
+            <select name="year" id="year"></select>
+        </section>
+        
+        <div id = "resultDate"> </div>
+    </section>
+
+    <section>
+        <div class="task">Задание 7. Прямоугольник</div>
+           
+        <div class = container>
+            <div class="element" id = 'rectangle'></div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="task.js"></script>
+</body>
+</html>

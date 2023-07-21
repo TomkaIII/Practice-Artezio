@@ -1,0 +1,143 @@
+*{
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+nav{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px rgb(239,239,241) solid;
+}
+
+nav a.main{
+    margin-left: 20px;
+}
+
+nav a.tasks{
+    color: rgb(158,156,152);
+    margin-left: 20px;
+
+    text-decoration: none;
+}
+
+nav a.settings{
+    float: right;
+    text-decoration: none;
+
+    color: rgb(158,156,152)
+}
+
+body{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    border-left: 4px rgb(158,156,152) solid;
+    margin-top: 30px;
+    padding-left: 16px;
+}
+
+header span.headerText{
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+div.task{
+    border-left: 2px rgb(158,156,152) solid;
+    margin-top: 30px;
+    padding-left: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section span{
+    font-size: 20px;
+}
+
+input{
+    margin-top: 20px;
+    max-width: 60%;
+}
+
+#answer1{
+    display: block;
+    margin-top: 5px;
+}
+
+input[type = "checkbox"]{
+    margin-top: -95px;
+    margin-left: 10px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+textarea{
+    max-width: 60%;
+}
+
+section.textArea{
+    flex-direction: row;
+}
+
+.slide-image{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.swiper{
+    max-width: 300px;
+    max-height: 200px;
+
+    margin-left: 0;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    color: grey;
+    font-weight:bold;
+}
+
+.container{
+    display: flex;
+    border: 2px grey solid;
+    border-radius: 10px;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 600px;
+    max-height: 300px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.element{
+    width: 100px;
+    height: 100px;
+    min-width:50px;
+    min-height: 50px;
+    max-width: 320px;
+    max-height: 180px;
+    border: 2px grey solid;
+}
+
+#dateNow{
+    margin-bottom: 10px;
+}
+
+#resultDate{
+    margin-top: 10px;
+}
